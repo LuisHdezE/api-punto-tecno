@@ -1,0 +1,13 @@
+import "./concept.model.js";
+import "./config.model.js";
+import "./customer.model.js";
+import "./item.model.js";
+import "./model.model.js";
+import "./picture.model.js";
+import "./product.model.js";
+import "./source.model.js";
+import "./transaction_de.model.js";
+import "./transaction_he.model.js";
+import "./type.model.js";
+import "./user.model.js";
+import "./vendor.model.js";
