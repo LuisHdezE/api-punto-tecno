@@ -1,7 +1,10 @@
 import { DataTypes } from "sequelize";
 import { sequelize } from "../database/database.js";
 
-export const Model = sequelize.define("model", {
+export const Config = sequelize.define("configs", {
   id: { type: DataTypes.INTEGER, primaryKey: true, autoincrement: true },
-  descripcion: { type: DataTypes.STRING },
+  name: { type: DataTypes.STRING },
+  rut: { type: DataTypes.STRING },
+  logo: { type: DataTypes.STRING },
+  signature: { type: DataTypes.STRING },
 });

@@ -1,3 +1,5 @@
+import { User } from "../models/user.model.js";
+
 export const getUser = (req, res) => {
   res.send("Listado de usuarios");
 };
