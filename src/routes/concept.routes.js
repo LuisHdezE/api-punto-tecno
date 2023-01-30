@@ -9,7 +9,7 @@ const router = express.Router();
 router.get("/concept", getConcept);
 
 // Get single user by ID
-router.get("/:id", (req, res) => {
+router.get("/concept/:id", (req, res) => {
   // ...
 });
 
@@ -17,12 +17,12 @@ router.get("/:id", (req, res) => {
 router.post("/concept", createConcept);
 
 // Update user
-router.put("/:id", (req, res) => {
+router.put("/concept/:id", (req, res) => {
   // ...
 });
 
 // Delete user
-router.delete("/:id", (req, res) => {
+router.delete("/concept/:id", (req, res) => {
   // ...
 });
 

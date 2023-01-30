@@ -6,7 +6,9 @@ import url from "url";
 import morgan from "morgan";
 
 import userRoutes from "./routes/user.routes.js";
+import categoryRoutes from "./routes/category.routes.js";
 import conceptRoutes from "./routes/concept.routes.js";
+import configRoutes from "./routes/config.routes.js";
 
 // import routes from "./routes/index.routes.js";
 //import router from "./routes/index.js";
@@ -32,6 +34,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "public")));
 
 //Routes
-app.use(userRoutes);
+app.use(categoryRoutes);
 app.use(conceptRoutes);
+app.use(configRoutes);
+app.use(userRoutes);
 export default app;
